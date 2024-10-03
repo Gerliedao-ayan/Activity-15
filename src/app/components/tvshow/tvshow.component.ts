@@ -10,7 +10,7 @@ interface TVShow {
   styleUrl: './tvshow.component.css'
 })
 export class TvshowComponent {
-  showList: TVShow[] = [
+  showLis: TVShow[] = [
     { name: "Stranger Things" },
     { name: "Game of Thrones" }
   ];
@@ -18,11 +18,11 @@ export class TvshowComponent {
 
   addShow() {
     const newShow: TVShow = { name: this.newShow };
-    this.showList.push(newShow);
+    this.showLis.push(newShow);
     this.newShow = '';
   }
 
   deleteShow(index: number) {
-    this.showList.splice(index, 1);
+    this.showLis.splice(index, 1);
   }
 }
