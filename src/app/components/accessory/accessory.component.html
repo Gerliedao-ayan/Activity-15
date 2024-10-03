@@ -11,7 +11,7 @@
   </tr>
   </thead>
   <tbody>
-  <tr *ngFor="let accessory of accessoryList; let i = index">
+  <tr *ngFor="let accessory of accessoryLis; let i = index">
     <td>{{accessory.name}}</td>
     <td>
       <button class="btn btn-danger" (click)="deleteAccessory(i)">Delete</button>

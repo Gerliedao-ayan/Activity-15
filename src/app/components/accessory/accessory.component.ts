@@ -8,20 +8,20 @@ interface Accessory {
   styleUrl: './accessory.component.css'
 })
 export class AccessoryComponent {
-  accessoryList: Accessory[] = [
-    { name: "Phone Case" },
-    { name: "Screen Protector" },
+  accessoryLis: Accessory[] = [
+    { name: "Charger" },
+    { name: "Privacy Protector" },
     { name: "Headphones" }
   ];
   newAccessory: string = '';
 
   addAccessory() {
     const newAccessory: Accessory = { name: this.newAccessory };
-    this.accessoryList.push(newAccessory);
+    this.accessoryLis.push(newAccessory);
     this.newAccessory = '';
   }
 
   deleteAccessory(index: number) {
-    this.accessoryList.splice(index, 1);
+    this.accessoryLis.splice(index, 1);
   }
 }
