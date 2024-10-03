@@ -7,12 +7,12 @@ import {FormsModule} from "@angular/forms";
   styleUrl: './food.component.css'
 })
 export class FoodComponent {
-  menuItems: string[] = ["Pizza", "Pasta", "Salad", "Burger"];
-  newItem: string = '';
+  menuItems: string[] = ["Burger", "Footlong", "Salad", "Spaghetti"];
+  newIte: string = '';
 
   addMenuItem() {
-    this.menuItems.push(this.newItem);
-    this.newItem = ''; // Clear the input field
+    this.menuItems.push(this.newIte);
+    this.newIte = ''; // Clear the input field
   }
 
   deleteMenuItem(index: number) {
