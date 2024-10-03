@@ -8,8 +8,7 @@ interface Video {
   styleUrl: './video.component.css'
 })
 export class VideoComponent {
-  videoList: Video[] = [
-    { title: "The Shawshank Redemption" },
+  videoLis: Video[] = [
     { title: "The Dark Knight" },
     { title: "Pulp Fiction" }
   ];
@@ -17,11 +16,11 @@ export class VideoComponent {
 
   addVideo() {
     const newVideo: Video = { title: this.newVideoTitle };
-    this.videoList.push(newVideo);
+    this.videoLis.push(newVideo);
     this.newVideoTitle = '';
   }
 
   deleteVideo(index: number) {
-    this.videoList.splice(index, 1);
+    this.videoLis.splice(index, 1);
   }
 }
