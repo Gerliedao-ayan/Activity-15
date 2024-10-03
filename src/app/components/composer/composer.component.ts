@@ -9,20 +9,19 @@ interface Composer {
   styleUrl: './composer.component.css'
 })
 export class ComposerComponent {
-  composerList: Composer[] = [
+  composerLis: Composer[] = [
     { name: "Ludwig van Beethoven" },
-    { name: "Wolfgang Amadeus Mozart" },
     { name: "Johann Sebastian Bach" }
   ];
   newComposer: string = '';
 
   addComposer() {
     const newComposer: Composer = { name: this.newComposer };
-    this.composerList.push(newComposer);
+    this.composerLis.push(newComposer);
     this.newComposer = '';
   }
 
   deleteComposer(index: number) {
-    this.composerList.splice(index, 1);
+    this.composerLis.splice(index, 1);
   }
 }
