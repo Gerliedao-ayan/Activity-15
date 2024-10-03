@@ -6,14 +6,14 @@ import { Component } from '@angular/core';
   styleUrl: './book.component.css'
 })
 export class BookComponent {
-  bookList: string[] = ["The Lord of the Rings", "Pride and Prejudice", "To Kill a Mockingbird"];
+  bookLit: string[] = ["c++", "java", "html"];
   item: string = '';
 
   addItems() {
-    this.bookList.push(this.item);
+    this.bookLit.push(this.item);
   }
 
   deleteBook(index: number) {
-    this.bookList.splice(index, 1);
+    this.bookLit.splice(index, 1);
   }
 }
