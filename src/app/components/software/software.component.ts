@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrl: './software.component.css'
 })
 export class SoftwareComponent {
+  software: string[] = [ "software1"];
+  item: string = '';
 
+  addItems() {
+    this.software.push(this.item);
+  }
+
+  deleteGame(index: number) {
+    this.software.splice(index, 1);
+  }
 }
