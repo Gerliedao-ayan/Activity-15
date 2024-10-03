@@ -9,9 +9,9 @@ interface Flower {
   styleUrl: './flower.component.css'
 })
 export class FlowerComponent {
-  flowerList: Flower[] = [
-    { name: "Roses", quantity: 50 },
-    { name: "Lilies", quantity: 20 },
+  flowerLis: Flower[] = [
+    { name: "Sunflower", quantity: 50 },
+    { name: "Rose", quantity: 20 },
     { name: "Hydrangeas", quantity: 15 }
   ];
   newFlower: string = '';
@@ -19,12 +19,12 @@ export class FlowerComponent {
 
   addFlower() {
     const newFlower: Flower = { name: this.newFlower, quantity: this.newQuantity };
-    this.flowerList.push(newFlower);
+    this.flowerLis.push(newFlower);
     this.newFlower = '';
     this.newQuantity = 0;
   }
 
   deleteFlower(index: number) {
-    this.flowerList.splice(index, 1);
+    this.flowerLis.splice(index, 1);
   }
 }
