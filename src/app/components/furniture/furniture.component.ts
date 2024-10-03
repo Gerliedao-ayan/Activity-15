@@ -8,20 +8,19 @@ interface Furniture {
   styleUrl: './furniture.component.css'
 })
 export class FurnitureComponent {
-  furnitureList: Furniture[] = [
+  furnitureLis: Furniture[] = [
     { name: "Sofa" },
-    { name: "Table" },
     { name: "Chair" }
   ];
   newFurniture: string = '';
 
   addFurniture() {
     const newFurniture: Furniture = { name: this.newFurniture };
-    this.furnitureList.push(newFurniture);
+    this.furnitureLis.push(newFurniture);
     this.newFurniture = '';
   }
 
   deleteFurniture(index: number) {
-    this.furnitureList.splice(index, 1);
+    this.furnitureLis.splice(index, 1);
   }
 }
