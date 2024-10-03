@@ -9,9 +9,8 @@ interface InventoryItem {
   styleUrl: './inventory.component.css'
 })
 export class InventoryComponent {
-  inventory: InventoryItem[] = [
+  inventor: InventoryItem[] = [
     { name: "T-Shirt", quantity: 20 },
-    { name: "Jeans", quantity: 15 },
     { name: "Shoes", quantity: 10 }
   ];
   newItem: string = '';
@@ -19,12 +18,12 @@ export class InventoryComponent {
 
   addItem() {
     const newItem: InventoryItem = { name: this.newItem, quantity: this.newQuantity };
-    this.inventory.push(newItem);
+    this.inventor.push(newItem);
     this.newItem = '';
     this.newQuantity = 0;
   }
 
   deleteItem(index: number) {
-    this.inventory.splice(index, 1);
+    this.inventor.splice(index, 1);
   }
 }
