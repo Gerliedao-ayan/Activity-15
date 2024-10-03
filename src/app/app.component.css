@@ -1,0 +1,36 @@
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+li {
+  width: 150px;
+  margin: 10px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: deeppink;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  font-family: 'Times New Roman', serif; /* Added font-family property */
+}
+
+button:hover {
+  background-color: dodgerblue;
+}
+
+button a {
+  text-decoration: none;
+  color: white;
+  font-family: 'Times New Roman', serif; /* Added font-family property */
+}
