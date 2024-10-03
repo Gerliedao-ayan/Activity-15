@@ -10,9 +10,9 @@ interface HardwareComponent {
   styleUrl: './computerhardware.component.css'
 })
 export class ComputerhardwareComponent {
-  hardwareList: HardwareComponent[] = [
-    { name: "CPU", quantity: 5 },
-    { name: "RAM", quantity: 10 },
+  hardwareLis: HardwareComponent[] = [
+    { name: "RAM", quantity: 5 },
+    { name: "CPU", quantity: 10 },
     { name: "Hard Drive", quantity: 8 }
   ];
   newComponent: string = '';
@@ -20,12 +20,12 @@ export class ComputerhardwareComponent {
 
   addComponent() {
     const newComponent: HardwareComponent = { name: this.newComponent, quantity: this.newQuantity };
-    this.hardwareList.push(newComponent);
+    this.hardwareLis.push(newComponent);
     this.newComponent = '';
     this.newQuantity = 0;
   }
 
   deleteComponent(index: number) {
-    this.hardwareList.splice(index, 1);
+    this.hardwareLis.splice(index, 1);
   }
 }
