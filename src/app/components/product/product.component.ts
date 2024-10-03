@@ -6,14 +6,14 @@ import { Component } from '@angular/core';
   styleUrl: './product.component.css'
 })
 export class ProductComponent {
-  productList: string[] = ["Laptop", "Smartphone", "Headphones"];
+  productLis: string[] = ["phone", "tablet", "headset"];
   item: string = '';
 
   addItems() {
-    this.productList.push(this.item);
+    this.productLis.push(this.item);
   }
 
   deleteProduct(index: number) {
-    this.productList.splice(index, 1);
+    this.productLis.splice(index, 1);
   }
 }
