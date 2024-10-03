@@ -6,14 +6,14 @@ import { Component } from '@angular/core';
   styleUrl: './employeelist.component.css'
 })
 export class EmployeelistComponent {
-  employeeList: string[] = ["employee1", "employee2"];
+  employerList: string[] = ["employer1", "employer2"];
   item: string = '';
 
   addItems() {
-    this.employeeList.push(this.item);
+    this.employerList.push(this.item);
   }
 
   deleteEmployee(index: number) {
-    this.employeeList.splice(index, 1);
+    this.employerList.splice(index, 1);
   }
 }
