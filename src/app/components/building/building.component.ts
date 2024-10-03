@@ -8,20 +8,19 @@ interface Building {
   styleUrl: './building.component.css'
 })
 export class BuildingComponent {
-  buildingList: Building[] = [
+  buildingLis: Building[] = [
     { name: "Main Building" },
-    { name: "Library" },
     { name: "Science Hall" }
   ];
   newBuilding: string = '';
 
   addBuilding() {
     const newBuilding: Building = { name: this.newBuilding };
-    this.buildingList.push(newBuilding);
+    this.buildingLis.push(newBuilding);
     this.newBuilding = '';
   }
 
   deleteBuilding(index: number) {
-    this.buildingList.splice(index, 1);
+    this.buildingLis.splice(index, 1);
   }
 }
