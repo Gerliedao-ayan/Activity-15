@@ -9,8 +9,7 @@ interface PresentationTopic {
   styleUrl: './presentation.component.css'
 })
 export class PresentationComponent {
-  topicList: PresentationTopic[] = [
-    { name: "The Future of Artificial Intelligence" },
+  topicLis: PresentationTopic[] = [
     { name: "Sustainable Living Practices" },
     { name: "The History of Music" }
   ];
@@ -18,11 +17,11 @@ export class PresentationComponent {
 
   addTopic() {
     const newTopic: PresentationTopic = { name: this.newTopic };
-    this.topicList.push(newTopic);
+    this.topicLis.push(newTopic);
     this.newTopic = '';
   }
 
   deleteTopic(index: number) {
-    this.topicList.splice(index, 1);
+    this.topicLis.splice(index, 1);
   }
 }
