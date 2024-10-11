@@ -1,8 +1,10 @@
-import { Component } from '@angular/core';
+import {Component, Injectable} from '@angular/core';
 interface InventoryItem {
   name: string;
   quantity: number;
-}
+}@Injectable({
+  providedIn: 'root',
+})
 @Component({
   selector: 'app-inventory',
   templateUrl: './inventory.component.html',

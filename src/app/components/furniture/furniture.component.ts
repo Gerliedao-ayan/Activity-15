@@ -1,7 +1,9 @@
-import { Component } from '@angular/core';
+import {Component, Injectable} from '@angular/core';
 interface Furniture {
   name: string;
-}
+}@Injectable({
+  providedIn: 'root',
+})
 @Component({
   selector: 'app-furniture',
   templateUrl: './furniture.component.html',

@@ -1,7 +1,9 @@
-import { Component } from '@angular/core';
+import {Component, Injectable} from '@angular/core';
 interface App {
   name: string;
-}
+}@Injectable({
+  providedIn: 'root',
+})
 @Component({
   selector: 'app-mobileapp',
   templateUrl: './mobileapp.component.html',

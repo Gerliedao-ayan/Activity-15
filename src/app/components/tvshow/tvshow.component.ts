@@ -1,9 +1,11 @@
-import { Component } from '@angular/core';
+import {Component, Injectable} from '@angular/core';
 
 interface TVShow {
   name: string;
 }
-
+@Injectable({
+  providedIn: 'root',
+})
 @Component({
   selector: 'app-tvshow',
   templateUrl: './tvshow.component.html',

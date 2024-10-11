@@ -1,8 +1,10 @@
-import { Component } from '@angular/core';
+import {Component, Injectable} from '@angular/core';
 interface Event {
   name: string;
   date: Date;
-}
+}@Injectable({
+  providedIn: 'root',
+})
 @Component({
   selector: 'app-event',
   templateUrl: './event.component.html',

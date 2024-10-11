@@ -1,11 +1,13 @@
-import { Component } from '@angular/core';
+import {Component, Injectable} from '@angular/core';
 
 
 interface Contact {
   name: string;
   phoneNumber: string;
 
-}
+}@Injectable({
+  providedIn: 'root',
+})
 @Component({
   selector: 'app-phone',
   templateUrl: './phone.component.html',

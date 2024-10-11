@@ -1,8 +1,10 @@
-import { Component } from '@angular/core';
+import {Component, Injectable} from '@angular/core';
 interface DevTool {
   name: string;
   category: string;
-}
+}@Injectable({
+  providedIn: 'root',
+})
 @Component({
   selector: 'app-developer',
   templateUrl: './developer.component.html',

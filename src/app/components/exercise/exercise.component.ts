@@ -1,10 +1,12 @@
-import { Component } from '@angular/core';
+import {Component, Injectable} from '@angular/core';
 
 interface Exercise {
   name: string;
   sets: number;
   reps: number;
-}
+}@Injectable({
+  providedIn: 'root',
+})
 @Component({
   selector: 'app-exercise',
   templateUrl: './exercise.component.html',

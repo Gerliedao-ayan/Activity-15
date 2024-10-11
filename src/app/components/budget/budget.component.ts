@@ -1,8 +1,11 @@
-import { Component } from '@angular/core';
+import {Component, Injectable} from '@angular/core';
 interface BudgetItem {
   name: string;
   cost: number;
 }
+@Injectable({
+  providedIn: 'root',
+})
 @Component({
   selector: 'app-budget',
   templateUrl: './budget.component.html',

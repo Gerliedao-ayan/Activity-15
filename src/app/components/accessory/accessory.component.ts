@@ -1,7 +1,10 @@
-import { Component } from '@angular/core';
+import {Component, Injectable} from '@angular/core';
 interface Accessory {
   name: string;
 }
+@Injectable({
+  providedIn: 'root',
+})
 @Component({
   selector: 'app-accessory',
   templateUrl: './accessory.component.html',

@@ -1,8 +1,11 @@
-import { Component } from '@angular/core';
+import {Component, Injectable} from '@angular/core';
 
 interface Composer {
   name: string;
 }
+@Injectable({
+  providedIn: 'root',
+})
 @Component({
   selector: 'app-composer',
   templateUrl: './composer.component.html',

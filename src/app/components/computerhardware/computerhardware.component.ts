@@ -1,9 +1,11 @@
-import { Component } from '@angular/core';
+import {Component, Injectable} from '@angular/core';
 import {FormsModule} from "@angular/forms";
 interface HardwareComponent {
   name: string;
   quantity: number;
-}
+}@Injectable({
+  providedIn: 'root',
+})
 @Component({
   selector: 'app-computerhardware',
   templateUrl: './computerhardware.component.html',

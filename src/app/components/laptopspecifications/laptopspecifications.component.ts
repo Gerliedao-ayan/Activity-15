@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, Injectable} from '@angular/core';
 import {FormsModule} from "@angular/forms";
 interface LaptopSpec {
   model: string;
@@ -7,7 +7,9 @@ interface LaptopSpec {
   storage: number;
   screenSize: number;
 }
-
+@Injectable({
+  providedIn: 'root',
+})
 @Component({
   selector: 'app-laptopspecifications',
   templateUrl: './laptopspecifications.component.html',

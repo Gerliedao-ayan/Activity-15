@@ -1,9 +1,11 @@
-import { Component } from '@angular/core';
+import {Component, Injectable} from '@angular/core';
 
 interface Meal {
   name: string;
   day: string;
-}
+}@Injectable({
+  providedIn: 'root',
+})
 @Component({
   selector: 'app-mealplan',
   templateUrl: './mealplan.component.html',

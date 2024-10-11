@@ -1,9 +1,11 @@
-import { Component } from '@angular/core';
+import {Component, Injectable} from '@angular/core';
 interface TourDate {
   city: string;
   date: Date;
 }
-
+@Injectable({
+  providedIn: 'root',
+})
 @Component({
   selector: 'app-tour',
   templateUrl: './tour.component.html',

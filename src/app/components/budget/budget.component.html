@@ -1,4 +1,6 @@
-<p>Budget List works!</p>
+
+<div class="container">
+  <h1>Budget List works!</h1>
 
 <input type="text" [(ngModel)]="newItem" placeholder="Enter budget item">
 <input type="number" [(ngModel)]="newCost" placeholder="Enter cost">
@@ -24,3 +26,4 @@
 </table>
 
 <p>Total Budget: {{getTotalCost() | currency}}</p>
+</div>

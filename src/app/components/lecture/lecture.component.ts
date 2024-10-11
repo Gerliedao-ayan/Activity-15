@@ -1,8 +1,10 @@
-import { Component } from '@angular/core';
+import {Component, Injectable} from '@angular/core';
 interface Lecture {
   topic: string;
   date: Date;
-}
+}@Injectable({
+  providedIn: 'root',
+})
 @Component({
   selector: 'app-lecture',
   templateUrl: './lecture.component.html',

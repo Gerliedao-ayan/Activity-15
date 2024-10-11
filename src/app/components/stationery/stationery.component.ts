@@ -1,10 +1,12 @@
-import { Component } from '@angular/core';
+import {Component, Injectable} from '@angular/core';
 import {FormsModule} from "@angular/forms";
 interface StationeryItem {
   name: string;
   quantity: number;
 }
-
+@Injectable({
+  providedIn: 'root',
+})
 @Component({
   selector: 'app-stationery',
   templateUrl: './stationery.component.html',

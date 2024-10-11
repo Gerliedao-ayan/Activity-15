@@ -1,4 +1,5 @@
-<p>Phone Contact List works!</p>
+<div class="container">
+<h1>Phone Contact List works!</h1>
 <input type="text" placeholder="Enter Contact Name" [(ngModel)]="name"/>
 <input type="text" placeholder="Enter Phone Number" [(ngModel)]="phoneNumber"/>
 <button class="btn btn-primary" (click)="addContact()">Add Contact</button>
@@ -9,3 +10,4 @@
     <button class="btn btn-danger" (click)="deleteContact(i)">Delete</button>
   </li>
 </ul>
+</div>

@@ -1,5 +1,7 @@
-import { Component } from '@angular/core';
-
+import {Component, Injectable} from '@angular/core';
+@Injectable({
+  providedIn: 'root',
+})
 @Component({
   selector: 'app-city',
   templateUrl: './city.component.html',
